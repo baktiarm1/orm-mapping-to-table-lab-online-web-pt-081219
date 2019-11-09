@@ -16,7 +16,7 @@ class Student
     sql =  <<-SQL
       CREATE TABLE IF NOT EXISTS students (
         id INTEGER PRIMARY KEY,
-        name TEXT, 
+        name TEXT,
         grade TEXT
         )
         SQL
@@ -27,8 +27,8 @@ class Student
     sql =
       "DROP TABLE IF EXISTS students" 
 
-    DB[:conn].execute(sql)  
-  end 
+    DB[:conn].execute(sql)
+  end
 
 
 
